@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TempComponent } from "./temp/temp.component";
 import { LisaCardComponent } from "./lisa-card/lisa-card.component";
+import { RyanCardComponent } from "./ryan-card/ryan-card.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'lisa', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: TempComponent },
+  { path: 'biz', component: RyanCardComponent },
   { path: 'lisa', component: LisaCardComponent }
 ];
 

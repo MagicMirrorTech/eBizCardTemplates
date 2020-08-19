@@ -15,6 +15,11 @@ HEADER   section
 .portrait {
   width: 45%;
   border-radius: 50%;
+  display: relative;
+}
+
+.silent {
+  display: none !important;
 }
 
 .header-info {

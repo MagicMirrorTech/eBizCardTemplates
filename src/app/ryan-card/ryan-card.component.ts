@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { DATA } from "../data-content";
 
 @Component({
-  selector: 'app-lisa-card',
-  templateUrl: './lisa-card.component.html',
-  styleUrls: ['./lisa-card.component.css']
+  selector: 'app-ryan-card',
+  templateUrl: './ryan-card.component.html',
+  styleUrls: ['./ryan-card.component.css']
 })
-export class LisaCardComponent implements OnInit {
+export class RyanCardComponent implements OnInit {
 
   data = DATA;
 
@@ -30,14 +30,18 @@ export class LisaCardComponent implements OnInit {
     }
   }
 
+
+  // Download Contact Info
   getVcard(): void {
-    window.open('../assets/cards/lisa.vcf');
+    let object = this.data;
+    let fname = object[0].name.split(' ');
+    window.open(`../assets/cards/${fname}.vcf`);
   }
 
+  // Scheduling A meeting
   calendly(): void {
     window.open('https://calendly.com/james-keck/connect');
   }
-
 
   // Going to website
   webPage() : void {
@@ -82,7 +86,6 @@ export class LisaCardComponent implements OnInit {
     const resultPara = document.querySelector('.result');
     navigator.share(cardLink);
   }
-
 
 
 
