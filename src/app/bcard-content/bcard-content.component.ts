@@ -21,5 +21,9 @@ export class BcardContentComponent implements OnInit {
     window.open('../assets/cards/ryan.vcf');
   }
 
+  calendly(): void {
+    window.open('https://calendly.com/james-keck/connect');
+  }
+
 
 }
