@@ -42,8 +42,8 @@ export class LisaCardComponent implements OnInit {
   // Going to website
   webPage() : void {
     let object = this.data;
-    window.open(`http://${object[0].website}`);
-    // window.open(web + this.data[0].website);
+    window.open(`https://${object[2].website}`);
+    // window.open(web + this.data[2].website);
   }
 
   // Send Email
@@ -52,7 +52,7 @@ export class LisaCardComponent implements OnInit {
     let type = 'mailto';
     let text = 'subject=Connecting';
 
-    location.href = (`${type}:${object[0].email}?${text}`);
+    location.href = (`${type}:${object[2].email}?${text}`);
   }
 
   // Send Biz Email
@@ -60,14 +60,14 @@ export class LisaCardComponent implements OnInit {
     let object = this.data;
     let type = 'mailto';
     let text = 'subject=Connecting';
-    location.href = (`${type}:${object[0].bizEmail}?${text}`);
+    location.href = (`${type}:${object[2].bizEmail}?${text}`);
   }
 
   // Make Call
   makeCall() : void {
     let object = this.data;
     let type = 'tel';
-    location.href = (`${type}:${object[0].mobile}`);
+    location.href = (`${type}:${object[2].mobile}`);
 
   }
 
@@ -75,8 +75,8 @@ export class LisaCardComponent implements OnInit {
   getSocial() : void {
     let object = this.data;
     const cardLink = {
-      title : object[0].name,
-      text : object[0].slogan,
+      title : object[2].name,
+      text : object[2].slogan,
       url : 'http://bcard.netlify.app'
     }
     const resultPara = document.querySelector('.result');

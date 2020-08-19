@@ -7,7 +7,7 @@ import { LisaCardComponent } from "./lisa-card/lisa-card.component";
 import { RyanCardComponent } from "./ryan-card/ryan-card.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'biz', pathMatch: 'full' },
   { path: 'home', component: TempComponent },
   { path: 'biz', component: RyanCardComponent },
   { path: 'lisa', component: LisaCardComponent }
