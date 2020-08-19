@@ -34,8 +34,8 @@ export class RyanCardComponent implements OnInit {
   // Download Contact Info
   getVcard(): void {
     let object = this.data;
-    let fname = object[0].name.split(' ');
-    window.open(`../assets/cards/${fname}.vcf`);
+    let fname = object[0].name.split(' ')[0];
+    location.href = (`../assets/cards/${fname}.vcf`);
   }
 
   // Scheduling A meeting
