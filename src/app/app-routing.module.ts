@@ -10,7 +10,9 @@ const routes: Routes = [
   { path: '', redirectTo: 'biz', pathMatch: 'full' },
   { path: 'home', component: TempComponent },
   { path: 'biz', component: RyanCardComponent },
-  { path: 'lisa', component: LisaCardComponent }
+  { path: 'lisa', component: LisaCardComponent },
+  { path: '**', component: RyanCardComponent  }
+
 ];
 
 @NgModule({
