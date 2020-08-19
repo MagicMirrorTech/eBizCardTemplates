@@ -101,7 +101,7 @@ BOTTOM icons
    bottom: 0;
    width: 100%;
    text-align: center;
-   padding: 5% 0 ;
+   padding: 3% 0 ;
    background-color: rgb(51, 102, 153);
    box-shadow: 0 0 10px 4px rgba(144,144,144,.7);
  }
@@ -110,6 +110,7 @@ BOTTOM icons
     color: white;
     text-decoration: none;
     margin: auto;
+    font-size: 1.5em;
   }
 
 

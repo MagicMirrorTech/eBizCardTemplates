@@ -21,4 +21,5 @@ export class BcardContentComponent implements OnInit {
     window.open('../assets/cards/ryan.vcf');
   }
 
+
 }
