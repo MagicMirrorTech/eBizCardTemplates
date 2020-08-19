@@ -2,6 +2,7 @@ import { Data } from "./data";
 
 export const DATA: Data[] = [
   {
+    id : 1,
     name: 'Ryan Unkown',
     title: 'Chief Consultant',
     biz: 'Best Deal In Town',
@@ -17,6 +18,7 @@ export const DATA: Data[] = [
     linkedIn: 'linkProf'
   },
   {
+    id : 2,
     name: 'Wife Unkown',
     title: 'Chief Consultant',
     biz: 'Best Deal In Town',
@@ -30,5 +32,21 @@ export const DATA: Data[] = [
     fbLink: 'fbWife',
     instaLink: 'instaWife',
     linkedIn: 'linkProf'
+  },
+  {
+    id : 3,
+    name: 'Lisa Keck',
+    title: 'Owner',
+    biz: 'Plain & Fancy Caterers',
+    slogan: 'Be The Best Electronic Store',
+    mobile: '(336) 688-7787',
+    bizPhone: '(336) 869-4842',
+    email: 'jtkeck1@msn.com',
+    bizEmail: '',
+    website: 'plainandfancycaterers.com',
+    calLink: '',
+    fbLink: '',
+    instaLink: '',
+    linkedIn: ''
   }
 ]
