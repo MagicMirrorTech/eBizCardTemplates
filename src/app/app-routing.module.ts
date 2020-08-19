@@ -6,12 +6,33 @@ import { TempComponent } from "./temp/temp.component";
 import { LisaCardComponent } from "./lisa-card/lisa-card.component";
 import { RyanCardComponent } from "./ryan-card/ryan-card.component";
 
+import { DataLoaderService } from "./data-loader.service";
+
 const routes: Routes = [
-  { path: '', redirectTo: 'biz', pathMatch: 'full' },
-  { path: 'home', component: TempComponent },
-  { path: 'biz', component: RyanCardComponent },
-  { path: 'lisa', component: LisaCardComponent },
-  { path: '**', component: RyanCardComponent  }
+  {
+    path: '',
+    redirectTo: 'biz',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: TempComponent
+  },
+  {
+    path: 'biz',
+    component: RyanCardComponent,
+    resolve: {
+      cres: DataLoaderService
+    }
+  },
+  {
+    path: 'lisa',
+    component: LisaCardComponent
+  },
+  {
+    path: '**',
+    component: RyanCardComponent
+  }
 
 ];
 

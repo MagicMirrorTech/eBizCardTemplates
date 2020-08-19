@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DATA } from "../data-content";
+import { CONTACT } from "../contact-content";
 
 @Component({
   selector: 'app-lisa-card',
@@ -9,7 +9,7 @@ import { DATA } from "../data-content";
 })
 export class LisaCardComponent implements OnInit {
 
-  data = DATA;
+  contact = CONTACT;
 
   constructor() { }
 
@@ -41,14 +41,14 @@ export class LisaCardComponent implements OnInit {
 
   // Going to website
   webPage() : void {
-    let object = this.data;
+    let object = this.contact;
     window.open(`https://${object[2].website}`);
-    // window.open(web + this.data[2].website);
+    // window.open(web + this.contact[2].website);
   }
 
   // Send Email
   sendEmail() : void {
-    let object = this.data;
+    let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
 
@@ -57,7 +57,7 @@ export class LisaCardComponent implements OnInit {
 
   // Send Biz Email
   sendBizEmail() : void {
-    let object = this.data;
+    let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
     location.href = (`${type}:${object[2].bizEmail}?${text}`);
@@ -65,7 +65,7 @@ export class LisaCardComponent implements OnInit {
 
   // Make Call
   makeCall() : void {
-    let object = this.data;
+    let object = this.contact;
     let type = 'tel';
     location.href = (`${type}:${object[2].mobile}`);
 
@@ -73,7 +73,7 @@ export class LisaCardComponent implements OnInit {
 
   // Auto Social Media
   getSocial() : void {
-    let object = this.data;
+    let object = this.contact;
     const cardLink = {
       title : object[2].name,
       text : object[2].slogan,

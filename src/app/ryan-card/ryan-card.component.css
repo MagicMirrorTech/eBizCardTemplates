@@ -171,11 +171,12 @@ Share buttons right-hand side
 }
 
 .action-buttons img {
-  width: 75%;
+  width: 70%;
   display: block;
-  margin: 10% 0;
+  margin: 20% 0;
   padding: 10%;
   border-radius: 50%;
+  background-color: white;
 }
 /*
 END BOTTOM icons

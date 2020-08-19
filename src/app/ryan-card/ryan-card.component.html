@@ -3,10 +3,10 @@
   <img class="portrait" src="../../assets/imgs/ryan.jpg" alt="Portrait of Ryan">
 
   <div class="header-info">
-    <span id="name">{{data[0].name}}</span>
+    <span id="name">{{contact[0].name}}</span>
     <br>
     <br>
-    <span id="title">{{data[0].title}}</span>
+    <span id="title">{{contact[0].title}}</span>
   </div>
 
 </div>
@@ -14,18 +14,18 @@
 <div class="contentContainer">
 
   <div class="biz-container">
-    <h3>{{data[0].biz}}</h3>
-    <p>"{{data[0].slogan}}"</p>
+    <h3>{{contact[0].biz}}</h3>
+    <p>"{{contact[0].slogan}}"</p>
   </div>
 
   <div class="contact-container">
     <ul class="contact-list">
-      <li (click)="makeCall()"><img class="icons" src="../../assets/icons/mobile.svg" alt="phone icon"><span>{{data[0].mobile}}</span></li> <!-- IDEA: click to send message -->
+      <li (click)="makeCall()"><img class="icons" src="../../assets/icons/mobile.svg" alt="phone icon"><span>{{contact[0].mobile}}</span></li> <!-- IDEA: click to send message -->
       <hr>
-      <li (click)="sendEmail()"><img class="icons" src="../../assets/icons/email-chic.svg" alt="email icon"> <span>{{data[0].email}}</span></li> <!-- IDEA: click to send email -->
-      <li (click)="sendBizEmail()"><img class="icons" src="../../assets/icons/mail.svg" alt="social icons"> <span>{{data[0].bizEmail}}</span> </li> <!-- IDEA: click to go to app -->
+      <li (click)="sendEmail()"><img class="icons" src="../../assets/icons/email-chic.svg" alt="email icon"> <span>{{contact[0].email}}</span></li> <!-- IDEA: click to send email -->
+      <li (click)="sendBizEmail()"><img class="icons" src="../../assets/icons/mail.svg" alt="social icons"> <span>{{contact[0].bizEmail}}</span> </li> <!-- IDEA: click to go to app -->
       <hr>
-      <li (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{data[0].website}}</span></li><!-- IDEA: click to go to app -->
+      <li (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{contact[0].website}}</span></li><!-- IDEA: click to go to app -->
     </ul>
   </div>
 

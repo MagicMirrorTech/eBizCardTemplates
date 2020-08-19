@@ -6,6 +6,22 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style media="screen">
+    #container {
+      text-align: center;
+      padding: 20%;
+    }
+
+    #logo-img-small {
+      width: 30%;
+      -webkit-animation: 3s linear 0s infinite  grow;
+              animation: 3s linear 0s infinite  grow;
+    }
+
+    @-webkit-keyframes grow { from { width: 30%; margin-top: 65%} to { width: 90%; margin-top: 30% }  }
+            @keyframes grow { from { width: 30%; margin-top: 65% } to { width: 90%; margin-top: 30% }  }
+  </style>
 </head>
 <body style="margin:0">
   <app-root></app-root>

@@ -1,6 +1,6 @@
-import { Data } from "./data";
+import { Contact } from "./contact";
 
-export const DATA: Data[] = [
+export const CONTACT: Contact[] = [
   {
     id : 1,
     name: 'Ryan Unkown',
@@ -44,6 +44,22 @@ export const DATA: Data[] = [
     email: 'jtkeck1@msn.com',
     bizEmail: '',
     website: 'plainandfancycaterers.com',
+    calLink: '',
+    fbLink: '',
+    instaLink: '',
+    linkedIn: ''
+  },
+  {
+    id : 4,
+    name: 'James Keck',
+    title: 'Owner',
+    biz: 'Best Deal In Town',
+    slogan: '#1 in Customer Service',
+    mobile: '(336) 880-0967',
+    bizPhone: '(303) 593-0581',
+    email: 'jakkeck@gmail.com',
+    bizEmail: 'best.deal.in.denver@gmail.com',
+    website: 'bestdealdenver.com',
     calLink: '',
     fbLink: '',
     instaLink: '',

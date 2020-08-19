@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DATA } from "../data-content";
+import { DataLoaderService } from "../data-loader.service";
+
+import { ActivatedRoute } from "@angular/router";
+import "rxjs/add/operator/map";
+
+import { CONTACT } from "../contact-content";
 
 @Component({
   selector: 'app-ryan-card',
@@ -9,11 +14,17 @@ import { DATA } from "../data-content";
 })
 export class RyanCardComponent implements OnInit {
 
-  data = DATA;
+  contact = CONTACT;
 
-  constructor() { }
+  constructor(private actr: ActivatedRoute) {
+      this.actr.data.map(data => data.cres.json() ).subscribe((res) => {
+        console.log(res);
+      })
+ }
 
   ngOnInit(): void {
+    console.log('component initiated');
+
   }
 
   // QR CODE
@@ -33,7 +44,7 @@ export class RyanCardComponent implements OnInit {
 
   // Download Contact Info
   getVcard(): void {
-    let object = this.data;
+    let object = this.contact;
     let fname = object[0].name.split(' ')[0];
     location.href = (`../assets/cards/${fname}.vcf`);
   }
@@ -45,14 +56,14 @@ export class RyanCardComponent implements OnInit {
 
   // Going to website
   webPage() : void {
-    let object = this.data;
+    let object = this.contact;
     window.open(`http://${object[0].website}`);
-    // window.open(web + this.data[0].website);
+    // window.open(web + this.contact[0].website);
   }
 
   // Send Email
   sendEmail() : void {
-    let object = this.data;
+    let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
 
@@ -61,7 +72,7 @@ export class RyanCardComponent implements OnInit {
 
   // Send Biz Email
   sendBizEmail() : void {
-    let object = this.data;
+    let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
     location.href = (`${type}:${object[0].bizEmail}?${text}`);
@@ -69,7 +80,7 @@ export class RyanCardComponent implements OnInit {
 
   // Make Call
   makeCall() : void {
-    let object = this.data;
+    let object = this.contact;
     let type = 'tel';
     location.href = (`${type}:${object[0].mobile}`);
 
@@ -77,7 +88,7 @@ export class RyanCardComponent implements OnInit {
 
   // Auto Social Media
   getSocial() : void {
-    let object = this.data;
+    let object = this.contact;
     const cardLink = {
       title : object[0].name,
       text : object[0].slogan,

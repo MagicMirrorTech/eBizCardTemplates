@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DATA } from "../data-content";
+import { CONTACT } from "../contact-content";
 
 @Component({
   selector: 'app-bcard-header',
@@ -9,7 +9,7 @@ import { DATA } from "../data-content";
 })
 export class BcardHeaderComponent implements OnInit {
 
-  data = DATA;
+  contact = CONTACT;
 
   constructor() { }
 

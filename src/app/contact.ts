@@ -1,4 +1,4 @@
-export interface Data {
+export interface Contact {
   id: number;
   name: string;
   title: string;

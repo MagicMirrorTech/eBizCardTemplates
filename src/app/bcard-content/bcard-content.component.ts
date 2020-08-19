@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DATA } from "../data-content";
+import { CONTACT } from "../contact-content";
 
 
 @Component({
@@ -10,7 +10,7 @@ import { DATA } from "../data-content";
 })
 export class BcardContentComponent implements OnInit {
 
-  data = DATA;
+  contact = CONTACT;
 
   constructor() { }
 
