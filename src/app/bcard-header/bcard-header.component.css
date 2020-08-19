@@ -1,0 +1,32 @@
+/*
+
+  This is the top section of the Biz card
+  the saying is the last part of this section
+
+*/
+
+
+.header-container {
+  text-align: center;
+  padding: 10% 3%;
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+.portrait {
+  width: 45%;
+  border-radius: 50%;
+}
+
+.header-info {
+  margin: 5% 0;
+}
+
+#name {
+  font-size: 1.7em;
+}
+
+#title {
+  font-weight: 100;
+  margin-top: 30px;
+}
