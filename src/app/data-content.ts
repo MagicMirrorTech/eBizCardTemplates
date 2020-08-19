@@ -11,7 +11,7 @@ export const DATA: Data[] = [
     bizPhone: '(303) 593-0581',
     email: 'email@example.com',
     bizEmail: 'bizEmail@example.com',
-    website: 'bestdealdenver.com',
+    website: 'magicmirror.dev',
     calLink: 'ryanLink',
     fbLink: 'fbRyan',
     instaLink: 'instaRyan',
