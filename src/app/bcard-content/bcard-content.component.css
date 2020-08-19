@@ -101,7 +101,8 @@ BOTTOM icons
    bottom: 0;
    width: 100%;
    text-align: center;
-   background-color: rgb(65, 65, 65);
+   padding: 5% 0 ;
+   background-color: rgb(51, 102, 153);
    box-shadow: 0 0 10px 4px rgba(144,144,144,.7);
  }
 
@@ -117,7 +118,7 @@ END Contact Btn
 */
 
   .spacer {
-    height: 50px;
+    height: 100px;
   }
 
 
@@ -129,8 +130,8 @@ Share buttons right-hand side
  */
 .action-buttons {
   position: fixed;
-  left: 80%;
-  top: 70%;
+  left: 75%;
+  top: 40%;
 }
 
 .action-buttons img {
