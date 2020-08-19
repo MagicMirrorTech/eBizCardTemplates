@@ -1,0 +1,179 @@
+
+/*
+====
+HEADER   section
+====
+ */
+
+.header-container {
+  text-align: center;
+  padding: 10% 3%;
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+.portrait {
+  width: 45%;
+  border-radius: 50%;
+}
+
+.header-info {
+  margin: 5% 0;
+}
+
+#name {
+  font-size: 1.7em;
+}
+
+#title {
+  font-weight: 100;
+  margin-top: 30px;
+}
+
+
+
+/*
+====
+CONTENT section
+====
+ */
+
+
+  /*
+     Containers
+  */
+
+  .biz-container {
+    position: relative;
+    top: -40px;
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+    background-color: white;
+    box-shadow: 0 0 10px 4px rgba(144,144,144,.7);
+    box-sizing: border-box;
+  }
+  .biz-container h3 {
+    font-size: 1.5em;
+    margin: auto;
+  }
+
+  .contact-container {
+    position: relative;
+    top: -20px;
+    background-color: white;
+  }
+
+
+  /*
+  Start:
+  TOP icons
+  */
+   .contact-list {
+     padding: 1%;
+   }
+  .contact-list li {
+    list-style-type: none;
+    padding: 5%;
+    text-align: left;
+    display: inline-flex;
+  }
+
+  .icons {
+    width: 12%;
+    height: 15%;
+    margin: 0 5% 0 0;
+  }
+
+  .contact-list span {
+    font-size: 1.5em;
+    box-sizing: content-box;
+    margin: auto 0;
+    text-align: left;
+  }
+  /*
+  END TOP icons
+  */
+
+
+ /*
+ Start:
+ BOTTOM icons
+ */
+
+ .social-list {
+   padding: 1%;
+   display: flex;
+ }
+ .social-list li {
+    list-style-type: none;
+    padding: 5%;
+    width: 100%;
+  }
+
+  .social-list li img {
+    width: 80%;
+    height: 80%;
+  }
+
+  /*
+  END:
+  BOTTOM icons
+  */
+
+
+
+  /*
+  Start
+  Contact Btn
+  */
+
+  .contact-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 3% 0 ;
+    background-color: rgb(170, 0, 0);
+    box-shadow: 0 0 10px 4px rgba(144,144,144,.7);
+  }
+
+   .contact-btn a {
+     color: white;
+     text-decoration: none;
+     margin: auto;
+     font-size: 1.5em;
+   }
+
+
+ /*
+ END Contact Btn
+ */
+
+   .spacer {
+     height: 100px;
+   }
+
+
+
+
+ /*
+ START
+ Share buttons right-hand side
+  */
+ .action-buttons {
+   position: fixed;
+   left: 75%;
+   top: 45%;
+ }
+
+ .action-buttons img {
+   width: 75%;
+   display: block;
+   margin: 10% 0;
+   padding: 10%;
+   border-radius: 50%;
+ }
+ /*
+ END BOTTOM icons
+ */
