@@ -36,13 +36,6 @@ export class CarlaCardComponent implements OnInit {
   }
 
 
-  // Download Contact Info
-  getVcard(): void {
-    let object = this.contact;
-    let fname = object[3].name.split(' ')[0].toLowerCase();
-    // let url = window.location.href;
-    window.open(`../assets/cards/${fname}.vcf`);
-  }
 
   // Scheduling A meeting
   calendly(): void {
@@ -92,14 +85,28 @@ export class CarlaCardComponent implements OnInit {
   // Auto Social Media
   getSocial() : void {
     let object = this.contact;
+    let fname = object[3].name.split(' ')[0].toLowerCase();
     const cardLink = {
       title : object[3].name,
       text : object[3].slogan,
-      url : 'http://bcard.netlify.app'
+      url : `http://bcard.netlify.app/${fname}`
     }
-    const resultPara = document.querySelector('.result');
     navigator.share(cardLink);
   }
 
+
+    // Download Contact Info
+    getVcard(): void {
+      let object = this.contact;
+      let fname = object[3].name.split(' ')[0].toLowerCase();
+      // let url = window.location.href;
+      window.open(`../assets/cards/${fname}.vcf`);
+      let link = location.href;
+      console.log(link);
+
+      setTimeout(() => {
+        window.close();
+      }, 1000);
+    }
 
 }
