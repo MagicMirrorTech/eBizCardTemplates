@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DataLoaderService } from "../data-loader.service";
+
+
 @Component({
   selector: 'app-temp',
   templateUrl: './temp.component.html',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TempComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  constructor( dataLoaderService : DataLoaderService ) { }
+
+  ngOnInit() {}
+
+
 
 }

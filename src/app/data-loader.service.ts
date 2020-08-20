@@ -1,20 +1,29 @@
 import { Injectable } from '@angular/core';
 
-import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from "@angular/router";
+import { Router } from "@angular/router";
 import { Http } from "@angular/http";
-import { Observable } from "rxjs/Observable ";
+
+import { Contact } from "./contact";
+import { CONTACT } from "./contact-content";
 
 @Injectable({
   providedIn: 'root'
 })
-export class DataLoaderService implements Resolve<any> {
+export class DataLoaderService {
 
-  constructor(private http: Http) { }
+  constructor(private router: Router) { }
 
-  resolve(route: ActivatedRouteSnapshot, rstate: RouterStateSnapshot): Observable<any> {
-    console.log('Logging collected route Param', route.get());
-    return this.http.get('localhost:4200/biz');
+  ngOnInit() {
+
+      console.log(window.location.href);
+      console.log(this.router.url);
   }
+
+  getContacts(): Contact[] {
+    return CONTACTS;
+  }
+
+
 
 
 }

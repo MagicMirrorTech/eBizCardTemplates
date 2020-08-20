@@ -10,6 +10,7 @@ import { TempComponent } from './temp/temp.component';
 
 import { LisaCardComponent } from './lisa-card/lisa-card.component';
 import { RyanCardComponent } from './ryan-card/ryan-card.component';
+import { CarlaCardComponent } from './carla-card/carla-card.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RyanCardComponent } from './ryan-card/ryan-card.component';
     BcardHeaderComponent,
     LisaCardComponent,
     TempComponent,
-    RyanCardComponent
+    RyanCardComponent,
+    CarlaCardComponent
   ],
   imports: [
     BrowserModule,

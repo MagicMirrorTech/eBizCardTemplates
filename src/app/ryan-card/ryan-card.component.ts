@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataLoaderService } from "../data-loader.service";
 
-import { ActivatedRoute } from "@angular/router";
-import "rxjs/add/operator/map";
-
+import { Contact } from "../contact";
 import { CONTACT } from "../contact-content";
+import { DataLoaderService } from "../data-loader.service";
 
 @Component({
   selector: 'app-ryan-card',
@@ -16,14 +15,9 @@ export class RyanCardComponent implements OnInit {
 
   contact = CONTACT;
 
-  constructor(private actr: ActivatedRoute) {
-      this.actr.data.map(data => data.cres.json() ).subscribe((res) => {
-        console.log(res);
-      })
- }
 
   ngOnInit(): void {
-    console.log('component initiated');
+    // console.log('component initiated');
 
   }
 
@@ -45,8 +39,10 @@ export class RyanCardComponent implements OnInit {
   // Download Contact Info
   getVcard(): void {
     let object = this.contact;
-    let fname = object[0].name.split(' ')[0];
-    location.href = (`../assets/cards/${fname}.vcf`);
+    let fname = object[3].name.split(' ')[0].toLowerCase();
+    // let url = window.location.href;
+    window.open(`../assets/cards/${fname}.vcf`);
+
   }
 
   // Scheduling A meeting

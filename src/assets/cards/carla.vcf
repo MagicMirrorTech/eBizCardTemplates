@@ -1,0 +1,15 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Pomicter;Carla;;;
+FN:Carla Pomicter
+ORG:DHI Mortgage Company, Ltd.;
+TITLE:IT Compliance Analyst
+TEL;TYPE=mobile,voice;VALUE=tel:412-952-4404
+TEL;TYPE=work,voice;VALUE=tel:512-257-5498
+URL:https://www.dhimortgage.com
+ADR;LABEL;TYPE=WORK:10700 Pecan Park Blvd, Suite 450, Austin, TX 78750\nUSA
+EMAIL:cpomicter@dhimortgage.com
+REV:20200819T213800z
+TZ:-0600
+END:VCARD

@@ -1,21 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DataLoaderService } from "../data-loader.service";
+
+import { Contact } from "../contact";
 import { CONTACT } from "../contact-content";
+import { DataLoaderService } from "../data-loader.service";
 
 
 @Component({
-  selector: 'app-bcard',
-  templateUrl: './bcard.component.html',
-  styleUrls: ['./bcard.component.css']
+  selector: 'app-carla-card',
+  templateUrl: './carla-card.component.html',
+  styleUrls: ['./carla-card.component.css']
 })
-export class BcardComponent implements OnInit {
+export class CarlaCardComponent implements OnInit {
 
   contact = CONTACT;
 
-  constructor() { }
 
   ngOnInit(): void {
+    // console.log('component initiated');
   }
+
 
   // QR CODE
   togQR() : void {
@@ -31,20 +36,25 @@ export class BcardComponent implements OnInit {
     }
   }
 
+
+  // Download Contact Info
   getVcard(): void {
-    window.open('../assets/cards/lisa.vcf');
+    let object = this.contact;
+    let fname = object[3].name.split(' ')[0].toLowerCase();
+    // let url = window.location.href;
+    window.open(`../assets/cards/${fname}.vcf`);
   }
 
+  // Scheduling A meeting
   calendly(): void {
     window.open('https://calendly.com/james-keck/connect');
   }
 
-
   // Going to website
   webPage() : void {
     let object = this.contact;
-    window.open(`https://${object[2].website}`);
-    // window.open(web + this.contact[2].website);
+    window.open(`http://${object[3].website}`);
+    // window.open(web + this.contact[3].website);
   }
 
   // Send Email
@@ -53,7 +63,7 @@ export class BcardComponent implements OnInit {
     let type = 'mailto';
     let text = 'subject=Connecting';
 
-    location.href = (`${type}:${object[2].email}?${text}`);
+    location.href = (`${type}:${object[3].email}?${text}`);
   }
 
   // Send Biz Email
@@ -61,14 +71,22 @@ export class BcardComponent implements OnInit {
     let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
-    location.href = (`${type}:${object[2].bizEmail}?${text}`);
+    location.href = (`${type}:${object[3].bizEmail}?${text}`);
   }
 
-  // Make Call
+  // Call Mobile Phone
   makeCall() : void {
     let object = this.contact;
     let type = 'tel';
-    location.href = (`${type}:${object[2].mobile}`);
+    location.href = (`${type}:${object[3].mobile}`);
+
+  }
+
+  // Call Business Phone
+  makeBizCall() : void {
+    let object = this.contact;
+    let type = 'tel';
+    location.href = (`${type}:${object[3].phone}`);
 
   }
 
@@ -76,16 +94,13 @@ export class BcardComponent implements OnInit {
   getSocial() : void {
     let object = this.contact;
     const cardLink = {
-      title : object[2].name,
-      text : object[2].slogan,
+      title : object[3].name,
+      text : object[3].slogan,
       url : 'http://bcard.netlify.app'
     }
     const resultPara = document.querySelector('.result');
     navigator.share(cardLink);
   }
-
-
-
 
 
 }

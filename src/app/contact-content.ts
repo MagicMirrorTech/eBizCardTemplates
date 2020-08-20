@@ -51,6 +51,22 @@ export const CONTACT: Contact[] = [
   },
   {
     id : 4,
+    name: 'Carla Pomicter',
+    title: 'IT Compliance Analyst',
+    biz: 'DHI Mortgage Company, Ltd.',
+    slogan: 'Founded In Family, Built On Commitment',
+    mobile: '(412) 952-4404',
+    bizPhone: '(512) 257-5498',
+    email: '',
+    bizEmail: 'cpomicter@dhimortgage.com',
+    website: 'dhimortgage.com',
+    calLink: '',
+    fbLink: '',
+    instaLink: '',
+    linkedIn: ''
+  },
+  {
+    id : 5,
     name: 'James Keck',
     title: 'Owner',
     biz: 'Best Deal In Town',

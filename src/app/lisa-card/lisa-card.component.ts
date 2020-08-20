@@ -31,7 +31,10 @@ export class LisaCardComponent implements OnInit {
   }
 
   getVcard(): void {
-    window.open('../assets/cards/lisa.vcf');
+    let object = this.contact;
+    let fname = object[3].name.split(' ')[0].toLowerCase();
+    // let url = window.location.href;
+    window.open(`../assets/cards/${fname}.vcf`);
   }
 
   calendly(): void {
