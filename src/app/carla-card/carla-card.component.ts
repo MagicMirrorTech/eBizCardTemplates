@@ -101,12 +101,6 @@ export class CarlaCardComponent implements OnInit {
       let fname = object[3].name.split(' ')[0].toLowerCase();
       // let url = window.location.href;
       window.open(`../assets/cards/${fname}.vcf`);
-      let link = location.href;
-      console.log(link);
-
-      setTimeout(() => {
-        window.close();
-      }, 1000);
     }
 
 }
