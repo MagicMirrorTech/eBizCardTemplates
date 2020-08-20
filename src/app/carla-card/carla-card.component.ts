@@ -86,7 +86,7 @@ export class CarlaCardComponent implements OnInit {
   makeBizCall() : void {
     let object = this.contact;
     let type = 'tel';
-    location.href = (`${type}:${object[3].phone}`);
+    location.href = (`${type}:${object[3].mobile}`);
 
   }
 
