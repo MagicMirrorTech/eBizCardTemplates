@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { Router } from "@angular/router";
-import { Http } from "@angular/http";
 
 import { Contact } from "./contact";
 import { CONTACT } from "./contact-content";
@@ -20,7 +19,7 @@ export class DataLoaderService {
   }
 
   getContacts(): Contact[] {
-    return CONTACTS;
+    return CONTACT;
   }
 
 

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataLoaderService } from "../data-loader.service";
 
 import { Contact } from "../contact";
 import { CONTACT } from "../contact-content";
+
 import { DataLoaderService } from "../data-loader.service";
 
 @Component({
