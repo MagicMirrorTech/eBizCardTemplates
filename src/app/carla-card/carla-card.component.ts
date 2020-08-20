@@ -13,7 +13,17 @@ import { DataLoaderService } from "../data-loader.service";
 })
 export class CarlaCardComponent implements OnInit {
 
+
+
+
+
+
   contact = CONTACT;
+
+  id: number = 3;
+
+  tname = this.contact[this.id].name.split(' ')[0].toLowerCase();
+
 
 
   ngOnInit(): void {
@@ -45,8 +55,8 @@ export class CarlaCardComponent implements OnInit {
   // Going to website
   webPage() : void {
     let object = this.contact;
-    window.open(`http://${object[3].website}`);
-    // window.open(web + this.contact[3].website);
+    window.open(`http://${object[this.id].website}`);
+    // window.open(web + this.contact[this.id].website);
   }
 
   // Send Email
@@ -55,7 +65,7 @@ export class CarlaCardComponent implements OnInit {
     let type = 'mailto';
     let text = 'subject=Connecting';
 
-    location.href = (`${type}:${object[3].email}?${text}`);
+    location.href = (`${type}:${object[this.id].email}?${text}`);
   }
 
   // Send Biz Email
@@ -63,14 +73,14 @@ export class CarlaCardComponent implements OnInit {
     let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
-    location.href = (`${type}:${object[3].bizEmail}?${text}`);
+    location.href = (`${type}:${object[this.id].bizEmail}?${text}`);
   }
 
   // Call Mobile Phone
   makeCall() : void {
     let object = this.contact;
     let type = 'tel';
-    location.href = (`${type}:${object[3].mobile}`);
+    location.href = (`${type}:${object[this.id].mobile}`);
 
   }
 
@@ -78,17 +88,17 @@ export class CarlaCardComponent implements OnInit {
   makeBizCall() : void {
     let object = this.contact;
     let type = 'tel';
-    location.href = (`${type}:${object[3].mobile}`);
+    location.href = (`${type}:${object[this.id].mobile}`);
 
   }
 
   // Auto Social Media
   getSocial() : void {
     let object = this.contact;
-    let fname = object[3].name.split(' ')[0].toLowerCase();
+    let fname = object[this.id].name.split(' ')[0].toLowerCase();
     const cardLink = {
-      title : object[3].name,
-      text : object[3].slogan,
+      title : object[this.id].name,
+      text : object[this.id].slogan,
       url : `http://bcard.netlify.app/${fname}`
     }
     navigator.share(cardLink);
@@ -98,7 +108,7 @@ export class CarlaCardComponent implements OnInit {
     // Download Contact Info
     getVcard(): void {
       let object = this.contact;
-      let fname = object[3].name.split(' ')[0].toLowerCase();
+      let fname = object[this.id].name.split(' ')[0].toLowerCase();
       // let url = window.location.href;
       window.open(`../assets/cards/${fname}.vcf`);
     }

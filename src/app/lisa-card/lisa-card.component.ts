@@ -11,6 +11,10 @@ export class LisaCardComponent implements OnInit {
 
   contact = CONTACT;
 
+  id: number = 2;
+
+  tname = this.contact[this.id].name.split(' ')[0].toLowerCase();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -32,8 +36,7 @@ export class LisaCardComponent implements OnInit {
 
   getVcard(): void {
     let object = this.contact;
-    let fname = object[3].name.split(' ')[0].toLowerCase();
-    // let url = window.location.href;
+    let fname = object[this.id].name.split(' ')[0].toLowerCase();
     window.open(`../assets/cards/${fname}.vcf`);
   }
 
@@ -45,8 +48,8 @@ export class LisaCardComponent implements OnInit {
   // Going to website
   webPage() : void {
     let object = this.contact;
-    window.open(`https://${object[2].website}`);
-    // window.open(web + this.contact[2].website);
+    window.open(`https://${object[this.id].website}`);
+    // window.open(web + this.contact[this.id].website);
   }
 
   // Send Email
@@ -55,7 +58,7 @@ export class LisaCardComponent implements OnInit {
     let type = 'mailto';
     let text = 'subject=Connecting';
 
-    location.href = (`${type}:${object[2].email}?${text}`);
+    location.href = (`${type}:${object[this.id].email}?${text}`);
   }
 
   // Send Biz Email
@@ -63,14 +66,14 @@ export class LisaCardComponent implements OnInit {
     let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
-    location.href = (`${type}:${object[2].bizEmail}?${text}`);
+    location.href = (`${type}:${object[this.id].bizEmail}?${text}`);
   }
 
   // Make Call
   makeCall() : void {
     let object = this.contact;
     let type = 'tel';
-    location.href = (`${type}:${object[2].mobile}`);
+    location.href = (`${type}:${object[this.id].mobile}`);
 
   }
 
@@ -78,8 +81,8 @@ export class LisaCardComponent implements OnInit {
   getSocial() : void {
     let object = this.contact;
     const cardLink = {
-      title : object[2].name,
-      text : object[2].slogan,
+      title : object[this.id].name,
+      text : object[this.id].slogan,
       url : 'http://bcard.netlify.app'
     }
     const resultPara = document.querySelector('.result');

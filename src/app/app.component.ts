@@ -21,7 +21,6 @@ export class AppComponent {
 
   title = 'Leading With Why';
 
-
   public showOverlay = true;
 
   constructor(private router: Router) {
@@ -41,4 +40,8 @@ export class AppComponent {
       }
 
   }
+
+
+
+
 }
