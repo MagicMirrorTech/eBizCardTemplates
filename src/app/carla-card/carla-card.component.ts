@@ -25,7 +25,7 @@ constructor (){}
 
 
   getUrl(): void {
-    this.fit = window.location.href.split('0/');
+    this.fit = window.location.href.split('.app/');
     console.log(this.fit[1]);
     this.end = this.fit[1];
   }
