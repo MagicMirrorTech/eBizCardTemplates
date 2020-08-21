@@ -69,7 +69,7 @@ export class BcardContentComponent implements OnInit {
       let color = this.object[this.id].secColor;
 
       // Set color and save as variable
-      let btnColor = document.getElementById('contactBtn').style = `background-color:${color}`;
+      let btnColor = document.getElementById('contactBtn').style.backgroundColor=color;
     }
 
   }
