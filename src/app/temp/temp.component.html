@@ -1,0 +1,57 @@
+<div class="header-container">
+
+  <img class="portrait" src="../../assets/imgs/{{tname}}/portrait.jpg" alt="Portrait of Ryan">
+
+  <div class="header-info">
+    <span id="name">{{contact[3].name}}</span>
+    <br>
+    <br>
+    <span id="title">{{contact[3].title}}</span>
+  </div>
+
+</div>
+
+<div class="contentContainer">
+
+
+  <div class="action-buttons">
+      <img (click)="calendly()" class="" src="../assets/icons/hand-shake-inverted.svg" alt="Schedule a meeting">
+      <img (click)="getSocial()" src="../assets/icons/share-arrow.png" alt="Share contact">
+  </div>
+
+  <div class="contact-container">
+    <ul class="contact-list">
+      <li id="bizTitle">{{contact[3].biz}}</li>
+      <li *ngIf="contact[3].slogan">"{{contact[3].slogan}}"</li>
+      <hr>
+      <li *ngIf="contact[3].mobile" (click)="makeCall()"><img class="icons" src="../../assets/icons/mobile.svg" alt="mobile phone icon"><span>{{contact[3].mobile}}</span></li> <!-- IDEA: click to send message -->
+      <li *ngIf="contact[3].bizPhone" (click)="makeBizCall()"><img class="icons" src="../../assets/icons/phone.svg" alt="phone icon"><span>{{contact[3].bizPhone}}</span></li> <!-- IDEA: click to send message -->
+      <hr>
+      <li *ngIf="contact[3].email" (click)="sendEmail()"><img class="icons" src="../../assets/icons/email-chic.svg" alt="email icon"> <span>{{contact[3].email}}</span></li> <!-- IDEA: click to send email -->
+      <li *ngIf="contact[3].bizEmail" (click)="sendBizEmail()"><img class="icons" src="../../assets/icons/mail.svg" alt="social icons"> <span>{{contact[3].bizEmail}}</span> </li> <!-- IDEA: click to go to app -->
+      <hr>
+      <li *ngIf="contact[3].website" (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{contact[3].website}}</span></li><!-- IDEA: click to go to app -->
+    </ul>
+  </div>
+
+  <hr>
+
+  <div >
+    <ul class="social-list">
+      <li><img class="icons" src="../../assets/icons/insta-color.svg" alt="social icons"> </li> <!-- IDEA: click to go to app -->
+      <li><img class="icons" src="../../assets/icons/facebook-color.svg" alt="social icons">  </li> <!-- IDEA: click to go to app -->
+      <li><img class="icons" src="../../assets/icons/linkedin-color.svg" alt="social icons">  </li> <!-- IDEA: click to go to app -->
+    </ul>
+  </div>
+
+  <div class="contact-btn">
+    <br>
+    <a (click)="getVcard()">ADD TO CONTACTS</a><!-- IDEA: click to 'save' to contacts -->
+    <br>
+    <br>
+  </div>
+
+  <div class="spacer">
+
+  </div>
+</div>

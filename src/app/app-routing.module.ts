@@ -10,34 +10,34 @@ import { CarlaCardComponent } from "./carla-card/carla-card.component";
 import { DataLoaderService } from "./data-loader.service";
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'biz',
-    pathMatch: 'full'
-  },
-  {
-    path: 'temp',
-    component: TempComponent,
-  },
-  {
-    path: 'home',
-    component: TempComponent
-  },
-  {
-    path: 'biz',
-    loadChildren: () => import('./b-cards/b-cards.module').then(m => m.BCardsModule)
-  },
-  {
-    path: 'lisa',
-    component: LisaCardComponent
-  },
-  {
-    path: 'carla',
-    component: CarlaCardComponent
-  },
+  // {
+  //   path: '',
+  //   redirectTo: 'biz',
+  //   pathMatch: 'full'
+  // },
+  // {
+  //   path: 'temp',
+  //   component: TempComponent
+  // },
+  // {
+  //   path: 'home',
+  //   component: TempComponent
+  // },
+  // {
+  //   path: 'biz',
+  //   loadChildren: () => import('./b-cards/b-cards.module').then(m => m.BCardsModule)
+  // },
+  // {
+  //   path: 'lisa',
+  //   component: LisaCardComponent
+  // },
+  // {
+  //   path: 'carla',
+  //   component: CarlaCardComponent
+  // },
   {
     path: '**',
-    component: RyanCardComponent
+    component: CarlaCardComponent
   }
 
 ];

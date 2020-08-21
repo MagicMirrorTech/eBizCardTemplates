@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
 import { Contact } from "../contact";
 import { CONTACT } from "../contact-content";
 
-import { DataLoaderService } from "../data-loader.service";
 
 @Component({
   selector: 'app-carla-card',
@@ -14,20 +13,47 @@ import { DataLoaderService } from "../data-loader.service";
 export class CarlaCardComponent implements OnInit {
 
 
-
-
+constructor (){}
 
 
   contact = CONTACT;
+  fit: Array<any>;
+  end:string ;
+  tname:string;
+  id:number;
 
-  id: number = 3;
 
-  tname = this.contact[this.id].name.split(' ')[0].toLowerCase();
 
+  getUrl(): void {
+    this.fit = window.location.href.split('0/');
+    console.log(this.fit[1]);
+    this.end = this.fit[1];
+  }
+
+  useUrl() {
+    if  ( this.end == 'temp') {
+      this.id = 4;
+    } else if (this.end == 'wife') {
+      this.id = 1;
+    } else if (this.end == 'lisa') {
+      this.id = 2;
+    } else if (this.end == 'carla') {
+      this.id = 3;
+    }  else {
+      this.id = 0;
+    }
+
+    console.log(this.id);
+    this.tname = this.contact[this.id].name.split(' ')[0].toLowerCase();
+
+    return this.id;
+  }
 
 
   ngOnInit(): void {
-    // console.log('component initiated');
+    this.getUrl();
+    this.useUrl();
+
   }
 
 
