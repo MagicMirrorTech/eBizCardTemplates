@@ -63,7 +63,8 @@ CONTENT section
    position: relative;
    text-align: center;
    display: flex;
-   top: -30px;
+   top: -35px;
+   height: 70px;
    justify-content: space-around;
  }
 
