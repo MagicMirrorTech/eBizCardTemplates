@@ -17,6 +17,7 @@ constructor (){}
 
 
   contact = CONTACT;
+  object = CONTACT;
   fit: Array<any>;
   end:string ;
   tname:string;
@@ -53,7 +54,7 @@ constructor (){}
     }
 
     console.log(this.id);
-    this.tname = this.contact[this.id].name.split(' ')[0].toLowerCase();
+    this.tname = this.object[this.id].name.split(' ')[0].toLowerCase();
 
     return this.id;
   }
@@ -62,6 +63,19 @@ constructor (){}
   ngOnInit(): void {
     this.getUrl();
     this.useUrl();
+
+
+    // dynamically set color of "Add to contact" btn
+    if (this.contact[this.id].secColor) {
+      // get color from DB
+      let color = this.object[this.id].secColor;
+
+      // Set color and save as variable
+      let btnColor = document.getElementById('contactBtn').style = `background-color:${color}`;
+    }
+
+
+    
 
   }
 
@@ -89,61 +103,55 @@ constructor (){}
 
   // Going to website
   webPage() : void {
-    let object = this.contact;
-    window.open(`http://${object[this.id].website}`);
+    window.open(`http://${this.object[this.id].website}`);
     // window.open(web + this.contact[this.id].website);
   }
 
   // Send Email
   sendEmail() : void {
-    let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
 
-    location.href = (`${type}:${object[this.id].email}?${text}`);
+    location.href = (`${type}:${this.object[this.id].email}?${text}`);
   }
 
   // Send Biz Email
   sendBizEmail() : void {
-    let object = this.contact;
     let type = 'mailto';
     let text = 'subject=Connecting';
-    location.href = (`${type}:${object[this.id].bizEmail}?${text}`);
+    location.href = (`${type}:${this.object[this.id].bizEmail}?${text}`);
   }
 
   // Call Mobile Phone
   makeCall() : void {
-    let object = this.contact;
     let type = 'tel';
-    location.href = (`${type}:${object[this.id].mobile}`);
+    location.href = (`${type}:${this.object[this.id].mobile}`);
 
   }
 
   // Call Business Phone
   makeBizCall() : void {
-    let object = this.contact;
     let type = 'tel';
-    location.href = (`${type}:${object[this.id].mobile}`);
+    location.href = (`${type}:${this.object[this.id].mobile}`);
 
   }
 
   // Auto Social Media
   getSocial() : void {
-    let object = this.contact;
-    let fname = object[this.id].name.split(' ')[0].toLowerCase();
+    let fname = this.object[this.id].name.split(' ')[0].toLowerCase();
     const cardLink = {
-      title : object[this.id].name,
-      text : object[this.id].slogan,
+      title : this.object[this.id].name,
+      text : this.object[this.id].slogan,
       url : `http://bcard.netlify.app/${fname}`
     }
     navigator.share(cardLink);
   }
 
 
+
     // Download Contact Info
     getVcard(): void {
-      let object = this.contact;
-      let fname = object[this.id].name.split(' ')[0].toLowerCase();
+      let fname = this.object[this.id].name.split(' ')[0].toLowerCase();
       // let url = window.location.href;
       open(`../assets/cards/${fname}.vcf`);
     }

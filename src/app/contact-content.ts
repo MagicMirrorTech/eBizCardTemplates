@@ -15,7 +15,11 @@ export const CONTACT: Contact[] = [
     calLink: 'ryanLink',
     fbLink: 'fbRyan',
     instaLink: 'instaRyan',
-    linkedIn: 'linkProf'
+    linkedIn: 'linkProf',
+    twitterLink: '',
+    mainColor: '',
+    secColor: '',
+    accColor: ''
   },
   {
     id : 1,
@@ -31,7 +35,11 @@ export const CONTACT: Contact[] = [
     calLink: 'wifeLink',
     fbLink: 'fbWife',
     instaLink: 'instaWife',
-    linkedIn: 'linkProf'
+    linkedIn: 'linkProf',
+    twitterLink: '',
+    mainColor: '',
+    secColor: '',
+    accColor: ''
   },
   {
     id : 2,
@@ -46,8 +54,12 @@ export const CONTACT: Contact[] = [
     website: 'plainandfancycaterers.com',
     calLink: '',
     fbLink: '',
+    linkedIn: '',
     instaLink: '',
-    linkedIn: ''
+    twitterLink: '',
+    mainColor: 'white',
+    secColor: 'red',
+    accColor: 'black'
   },
   {
     id : 3,
@@ -63,7 +75,11 @@ export const CONTACT: Contact[] = [
     calLink: '',
     fbLink: '',
     instaLink: '',
-    linkedIn: ''
+    linkedIn: '',
+    twitterLink: '',
+    mainColor: '',
+    secColor: '',
+    accColor: ''
   },
   {
     id : 4,
@@ -79,6 +95,10 @@ export const CONTACT: Contact[] = [
     calLink: 'https://calendly.com/james-keck/connect',
     fbLink: '',
     instaLink: '',
-    linkedIn: ''
+    linkedIn: 'keck-james-keck',
+    twitterLink: '_techtranslator',
+    mainColor: '',
+    secColor: '',
+    accColor: ''
   }
 ]
