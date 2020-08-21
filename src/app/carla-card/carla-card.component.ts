@@ -25,7 +25,16 @@ constructor (){}
 
 
   getUrl(): void {
-    this.fit = window.location.href.split('.app/');
+    let dev = 'local';
+    let prod = 'netlify';
+    let href:string = window.location.href;
+    if (href.includes(dev)) {
+      this.fit = href.split('0/');
+      console.log('This app is in dev mode');
+    } else {
+      this.fit = href.split('.app/');
+    }
+
     console.log(this.fit[1]);
     this.end = this.fit[1];
   }
