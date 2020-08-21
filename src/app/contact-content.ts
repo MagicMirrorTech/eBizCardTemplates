@@ -2,7 +2,7 @@ import { Contact } from "./contact";
 
 export const CONTACT: Contact[] = [
   {
-    id : 1,
+    id : 0,
     name: 'Ryan Unkown',
     title: 'Chief Consultant',
     biz: 'AmWay',
@@ -18,7 +18,7 @@ export const CONTACT: Contact[] = [
     linkedIn: 'linkProf'
   },
   {
-    id : 2,
+    id : 1,
     name: 'Wife Unkown',
     title: 'Chief Consultant',
     biz: 'Best Deal In Town',
@@ -34,7 +34,7 @@ export const CONTACT: Contact[] = [
     linkedIn: 'linkProf'
   },
   {
-    id : 3,
+    id : 2,
     name: 'Lisa Keck',
     title: 'Owner',
     biz: 'Plain & Fancy Caterers',
@@ -50,7 +50,7 @@ export const CONTACT: Contact[] = [
     linkedIn: ''
   },
   {
-    id : 4,
+    id : 3,
     name: 'Carla Pomicter',
     title: 'IT Compliance Analyst',
     biz: 'DHI Mortgage Company, Ltd.',
@@ -66,17 +66,17 @@ export const CONTACT: Contact[] = [
     linkedIn: ''
   },
   {
-    id : 5,
+    id : 4,
     name: 'James Keck',
-    title: 'Owner',
-    biz: 'Best Deal In Town',
-    slogan: '#1 in Customer Service',
+    title: 'Software Developer | Creator of Ideas',
+    biz: 'Magic Mirror Developers',
+    slogan: 'Hand-coded Websites in 2-Days',
     mobile: '(336) 880-0967',
     bizPhone: '(303) 593-0581',
     email: 'jakkeck@gmail.com',
-    bizEmail: 'best.deal.in.denver@gmail.com',
-    website: 'bestdealdenver.com',
-    calLink: '',
+    bizEmail: 'james@magicmirror.dev',
+    website: 'magicmirror.dev',
+    calLink: 'https://calendly.com/james-keck/connect',
     fbLink: '',
     instaLink: '',
     linkedIn: ''
