@@ -145,7 +145,7 @@ constructor (){}
       let object = this.contact;
       let fname = object[this.id].name.split(' ')[0].toLowerCase();
       // let url = window.location.href;
-      window.open(`../assets/cards/${fname}.vcf`);
+      open(`../assets/cards/${fname}.vcf`);
     }
 
 }

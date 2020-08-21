@@ -68,8 +68,8 @@ export const CONTACT: Contact[] = [
   {
     id : 4,
     name: 'James Keck',
-    title: 'Software Developer | Creator of Ideas',
-    biz: 'Magic Mirror Developers',
+    title: 'Software Developer | CEO | Creator of Ideas',
+    biz: 'M|M Developers',
     slogan: 'Hand-coded Websites in 2-Days',
     mobile: '(336) 880-0967',
     bizPhone: '(303) 593-0581',

@@ -1,0 +1,15 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Keck;James;;;
+FN:James Keck
+ORG:M|M Developers;
+TITLE:Software Developer | CEO | Creator of Ideas
+TEL;TYPE=mobile,voice;VALUE=tel:336-880-0967
+X-SOCIALPROFILE;type=LINKEDIN:www.linkedin.com/in/keck-james-keck
+X-SOCIALPROFILE;type=TWITTER:https://twitter.com/_techtranslator
+URL:https://www.magicmirror.dev
+EMAIL:james@magicmirror.dev
+REV:20200820T200400z
+TZ:-0600
+END:VCARD
