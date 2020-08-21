@@ -100,5 +100,26 @@ export const CONTACT: Contact[] = [
     mainColor: '',
     secColor: '',
     accColor: ''
+  },
+
+  {
+    id : 5,
+    name: 'Andie Fernandez',
+    title: 'Community Manager',
+    biz: 'M|M Developers',
+    slogan: 'Hand-coded Websites in 2-Days',
+    mobile: '(55) 3434-3745',
+    bizPhone: '',
+    email: 'cocosnar@gmail.com',
+    bizEmail: 'andie@magicmirror.dev',
+    website: 'magicmirror.dev',
+    calLink: 'https://calendly.com/james-keck/connect',
+    fbLink: '',
+    instaLink: '',
+    linkedIn: 'keck-james-keck',
+    twitterLink: '_techtranslator',
+    mainColor: '',
+    secColor: '',
+    accColor: ''
   }
 ]
