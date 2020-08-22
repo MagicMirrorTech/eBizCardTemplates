@@ -1,0 +1,16 @@
+
+BEGIN:VCARD
+VERSION:4.0
+N:Montes;Cameron;;;
+FN:Cameron Montes
+ORG:Best Deal In Town
+TITLE:Operations Specialist
+TEL;TYPE=work,voice;VALUE=uri:tel:+1-720-272-1279
+TEL;TYPE=home,voice;VALUE=uri:tel:+1-303-593-0581
+ADR;TYPE=WORK;PREF=1;LABEL="4371 S Broadway\nEnglewood\, CO 80113\nUS":;;4371 S Broadway;Englewood;CO;80113;US
+X-SOCIALPROFILE;type=FACEBOOK:www.facebook.com/DenverHDTV
+X-SOCIALPROFILE;type=Google:http://g.page/bestDealDenver/review?mt
+EMAIL:cameronbestdealdenver@gmail.com
+REV:20200821T224000Z
+x-qq:21588891
+END:VCARD

@@ -39,16 +39,22 @@ export class BcardContentComponent implements OnInit {
 
     useUrl() {
       if( this.end == 'ryan') {
-        this.id = 0;
+          this.id = 0;
       } else if (this.end == 'wife') {
-        this.id = 1;
+          this.id = 1;
       } else if (this.end == 'lisa') {
-        this.id = 2;
+          this.id = 2;
       } else if (this.end == 'carla') {
-        this.id = 3;
+          this.id = 3;
+      } else if (this.end == 'james') {
+          this.id = 4;
       } else if (this.end == 'andie') {
-        this.id = 5;
-      }  else {
+          this.id = 5;
+      } else if (this.end == 'cam') {
+          this.id = 6;
+      }
+
+      else {
         this.id = 4;
       }
 

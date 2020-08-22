@@ -8,8 +8,10 @@ TITLE:Community Manager
 TEL;TYPE=mobile,voice;VALUE=tel:+52-55-3434-3745
 X-SOCIALPROFILE;type=LINKEDIN:www.linkedin.com/in/keck-james-keck
 X-SOCIALPROFILE;type=TWITTER:https://twitter.com/_techtranslator
+X-SOCIALPROFILE;type=FACEBOOK:www.facebook.com/mmdevs
+X-SOCIALPROFILE;type=Google:http://g.page/mmdevs/review?rc
 URL:https://www.magicmirror.dev
 EMAIL:andie@magicmirror.dev
-REV:20200820T200400z
+REV:20200821T224000z
 TZ:-0600
 END:VCARD
