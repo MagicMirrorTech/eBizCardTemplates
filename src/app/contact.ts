@@ -19,6 +19,8 @@ export interface Contact {
   instaLink:    string;
   linkedIn:     string;
   twitterLink:  string;
+  gitHub:       string;
+  stkOvrflow:   string;
   mainColor:    string;
   secColor:     string;
   accColor:     string;
