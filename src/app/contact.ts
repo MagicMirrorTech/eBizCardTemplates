@@ -12,9 +12,10 @@ export interface Contact {
   addr:         string;
   bizAddr:      string;
   calLink:      string;
-  fbLink:       string;
   gglLink:      string;
+  gglRev:       string;
   gglMap:       string;
+  fbLink:       string;
   instaLink:    string;
   linkedIn:     string;
   twitterLink:  string;
