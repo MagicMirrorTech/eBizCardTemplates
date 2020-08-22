@@ -324,7 +324,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              11,
-    name:             'Eric Reyes',
+    name:             'Erik Reyes',
     title:            'Plugger of Men',
     biz:              'Company Name',
     slogan:           'To plug butts is my mission',
