@@ -27,6 +27,8 @@ CONTENT section
 
  .social-container {}
 
+
+
  /*
  START
  Share buttons right-hand side
@@ -48,6 +50,58 @@ CONTENT section
    border-radius: 50%;
    background-color: rgba(140,140,140, 1);
  }
+
+ .cal-options {
+   position: fixed;
+   top: 20%;
+   left: 5%;
+   width: 85%;
+   background-color: white;
+   margin: 0;
+   padding: 5%;
+   height: 340px;
+   text-align: center;
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: 10% auto 10%;
+   z-index: 20;
+   box-shadow: 0 0 4px 5px white;
+ }
+
+ .silent {
+   display: none;
+ }
+
+  .cal-options a {
+    text-decoration: none;
+    color: darkgray;
+    margin: auto;
+  }
+  .cal-options img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+
+  #deliveryIcon {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #installIcon {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #choiceTitle {
+    grid-column: 1/3;
+    grid-row: 3;
+    margin: auto;
+  }
+
+  #cal-close-btn {
+    grid-column: 1/3;
+  }
+
  /*
  END SHARE buttons
  */

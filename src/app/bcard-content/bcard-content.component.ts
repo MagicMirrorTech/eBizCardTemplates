@@ -139,8 +139,19 @@ export class BcardContentComponent implements OnInit {
 
       // Displays title if any social links exist
       calendly(){
-        if (this.contact[this.id].calendly) {
-          open(this.contact[this.id].calendly);
+        if (this.contact[this.id].calLink) {
+          if (this.end == "cameron" || this.end == "cam" || this.end == "jerius") {
+            //gets the container displaying the options
+            let calCont = document.getElementById('cal-options');
+            if ( calCont.classList.contains('silent') ) {
+              calCont.classList.remove('silent');
+              return calCont;
+            } else {
+              calCont.classList.add('silent');
+              return calCont;
+            }
+          }
+          open(this.contact[this.id].calLink);
         }
       }
 

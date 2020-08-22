@@ -6,10 +6,17 @@
   <div class="action-buttons">
       <img (click)="calendly()" class="" src="../assets/icons/hand-shake-inverted.svg" alt="Schedule a meeting">
       <img (click)="getSocial()" src="../assets/icons/share-arrow.png" alt="Share contact">
-      <div class="">
-        <a href="https://calendly.com/bdit/delivery"><img class="icons silent" src="" alt="delivery icon"></a>
-        <a href="https://calendly.com/bdit/install"><img class="icons silent" src="" alt="install icon"></a>
-      </div>
+  </div>
+
+  <div (click)="calendly()" id="cal-options" class="cal-options silent">
+    <label class="">Delivery</label>
+    <a target="_blank" id="deliveryIcon" href="https://calendly.com/bdit/delivery"><img class="icons " src="../assets/icons/lorry.svg" alt="delivery icon"></a>
+    <label class="">Install</label>
+    <a target="_blank" id="installIcon" href="https://calendly.com/bdit/install"><img class="icons " src="../assets/icons/drill.svg" alt="install icon"></a>
+    <h3 id="choiceTitle" class="">Click Above To Schedule</h3>
+
+
+    <a id="cal-close-btn">Click here to close window</a>
   </div>
 
   <div class="contact-container">
