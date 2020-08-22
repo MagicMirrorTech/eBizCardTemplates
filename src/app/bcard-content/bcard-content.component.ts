@@ -86,11 +86,17 @@ export class BcardContentComponent implements OnInit {
 
 
   // BUSINESS INFO
+  
       // Going to website
       webPage() : void {
         window.open(`http://${this.object[this.id].website}`);
         // window.open(web + this.contact[this.id].website);
       }
+
+      getRevs(): void {
+        open(this.object[this.id].gglLink);
+      }
+
   // END business info
 
 
@@ -158,7 +164,7 @@ export class BcardContentComponent implements OnInit {
 
       // Address
       getMap(): void {
-        let adLink = this.object[this.id].gglMap;
+        let adLink = this.object[this.id].gglLink;
         window.open(adLink);
       }
 

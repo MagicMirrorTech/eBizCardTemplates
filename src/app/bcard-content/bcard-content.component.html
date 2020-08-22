@@ -10,7 +10,10 @@
 
   <div class="contact-container">
     <ul class="contact-list">
-      <li id="bizTitle">{{contact[this.id].biz}}</li>
+      <li
+        (click)="getRevs()"
+        id="bizTitle"
+        >{{contact[this.id].biz}}</li>
       <li
         *ngIf="contact[this.id].slogan">"{{contact[this.id].slogan}}"</li>
       <hr>
@@ -70,6 +73,7 @@
   </div>
 
   <div class="spacer">
-
+    <small>built by <a href="https://magicmirror.dev">M|M Developers</a></small>
+    <br>
   </div>
 </div>
