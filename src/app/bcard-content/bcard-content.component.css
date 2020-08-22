@@ -93,7 +93,7 @@ CONTENT section
  }
 
  .emails {
-   font-size: .9em;
+   font-size: 1.35em !important;
  }
  /*
  END TOP icons
@@ -105,7 +105,7 @@ Start:
 BOTTOM icons
 */
 .social-container > h4 {
-  margin-left: 30%;
+  margin-left: 5%;
 }
 
 .social-list {
@@ -121,7 +121,7 @@ BOTTOM icons
    list-style-type: none;
    padding: 5%;
    width: 100%;
-   margin-bottom: 5%;
+   margin-bottom: 10%;
  }
 
  .social-list li img {

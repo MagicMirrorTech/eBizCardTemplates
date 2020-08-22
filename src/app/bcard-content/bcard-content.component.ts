@@ -17,6 +17,7 @@ export class BcardContentComponent implements OnInit {
   fit: Array<any>;
   end:string ;
   tname:string;
+  social:boolean;
   id:number;
 
     // Gets the current url to find the correct link to redirect
@@ -83,15 +84,10 @@ export class BcardContentComponent implements OnInit {
     this.getUrl();
     this.useUrl();
 
-    // dynamically set color of "Add to contact" btn
-    if (this.contact[this.id].secColor) {
-      // get color from DB
-      let color = this.object[this.id].secColor;
-
-      // Set color and save as variable
-      let btnColor = document.getElementById('contactBtn').style.backgroundColor=color;
-    }
-
+    // Set the colors to User preference / brand
+    this.getColors();
+    // Determins if any social links are present to know if should display title or not
+    this.getSocialTitle();
   }
 
 
@@ -106,6 +102,17 @@ export class BcardContentComponent implements OnInit {
       getRevs(): void {
         open(this.object[this.id].gglLink);
       }
+
+    // dynamically set color of "Add to contact" btn
+    getColors(){
+      if (this.contact[this.id].secColor) {
+        // get color from DB
+        let color = this.object[this.id].secColor;
+
+        // Set color and save as variable
+        let btnColor = document.getElementById('contactBtn').style.backgroundColor=color;
+      }
+    }
 
   // END business info
 
@@ -123,6 +130,12 @@ export class BcardContentComponent implements OnInit {
         navigator.share(cardLink);
       }
 
+      // Displays title if any social links exist
+      getSocialTitle(){
+        if (this.contact[this.id].instaLink || this.contact[this.id].linkedIn || this.contact[this.id].twitterLink || this.contact[this.id].fbLink || this.contact[this.id].gitHub || this.contact[this.id].stkOvrflow) {
+          this.social = true;
+        }
+      }
 
   // END SHARING & SOCIAL
 
