@@ -52,6 +52,8 @@ export class BcardContentComponent implements OnInit {
           this.id = 5;
       } else if (this.end == 'cam') {
           this.id = 6;
+      } else if (this.end == 'jk') {
+          this.id = 7;
       }
 
       else {
@@ -83,66 +85,81 @@ export class BcardContentComponent implements OnInit {
   }
 
 
-
-    // Scheduling A meeting
-    calendly(): void {
-      window.open('https://calendly.com/james-keck/connect');
-    }
-
-    // Going to website
-    webPage() : void {
-      window.open(`http://${this.object[this.id].website}`);
-      // window.open(web + this.contact[this.id].website);
-    }
-
-    // Send Email
-    sendEmail() : void {
-      let type = 'mailto';
-      let text = 'subject=Connecting';
-
-      location.href = (`${type}:${this.object[this.id].email}?${text}`);
-    }
-
-    // Send Biz Email
-    sendBizEmail() : void {
-      let type = 'mailto';
-      let text = 'subject=Connecting';
-      location.href = (`${type}:${this.object[this.id].bizEmail}?${text}`);
-    }
-
-    // Call Mobile Phone
-    makeCall() : void {
-      let type = 'tel';
-      location.href = (`${type}:${this.object[this.id].mobile}`);
-
-    }
-
-    // Call Business Phone
-    makeBizCall() : void {
-      let type = 'tel';
-      location.href = (`${type}:${this.object[this.id].mobile}`);
-
-    }
-
-    // Auto Social Media
-    getSocial() : void {
-      let fname = this.object[this.id].name.split(' ')[0].toLowerCase();
-      const cardLink = {
-        title : this.object[this.id].name,
-        text : this.object[this.id].slogan,
-        url : `http://bcard.netlify.app/${fname}`
+  // BUSINESS INFO
+      // Going to website
+      webPage() : void {
+        window.open(`http://${this.object[this.id].website}`);
+        // window.open(web + this.contact[this.id].website);
       }
-      navigator.share(cardLink);
-    }
+  // END business info
 
 
+  // SHARING & SOCIAL
+
+      //  SHARE
+      getSocial() : void {
+        let fname = this.object[this.id].name.split(' ')[0].toLowerCase();
+        const cardLink = {
+          title : this.object[this.id].name,
+          text : this.object[this.id].slogan,
+          url : `http://bcard.netlify.app/${fname}`
+        }
+        navigator.share(cardLink);
+      }
+
+  // END SHARING & SOCIAL
+
+
+
+  // CONTACT INFO
+      // Send Email
+      sendEmail() : void {
+        let type = 'mailto';
+        let text = 'subject=Connecting';
+        location.href = (`${type}:${this.object[this.id].email}?${text}`);
+      }
+
+      // Send Biz Email
+      sendBizEmail() : void {
+        let type = 'mailto';
+        let text = 'subject=Connecting';
+        location.href = (`${type}:${this.object[this.id].bizEmail}?${text}`);
+      }
+
+      // Call Mobile Phone
+      makeCall() : void {
+        let type = 'tel';
+        location.href = (`${type}:${this.object[this.id].mobile}`);
+
+      }
+
+      // Call Business Phone
+      makeBizCall() : void {
+        let type = 'tel';
+        location.href = (`${type}:${this.object[this.id].mobile}`);
+      }
+
+      // Scheduling A meeting
+      calendly(): void {
+        window.open('https://calendly.com/james-keck/connect');
+      }
 
       // Download Contact Info
       getVcard(): void {
         let fname = this.object[this.id].name.split(' ')[0].toLowerCase();
-        // let url = window.location.href;
+        if (fname == "james") {
+          let url = window.location.href;
+          if (url.includes('jk')) {
+            open(`../assets/cards/bdit.vcf`);
+          }
+        }
         open(`../assets/cards/${fname}.vcf`);
       }
 
+      // Address
+      getMap(): void {
+        let adLink = this.object[this.id].gglMap;
+        window.open(adLink);
+      }
 
 }

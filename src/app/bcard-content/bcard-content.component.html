@@ -11,17 +11,32 @@
   <div class="contact-container">
     <ul class="contact-list">
       <li id="bizTitle">{{contact[this.id].biz}}</li>
-      <li *ngIf="contact[this.id].slogan">"{{contact[this.id].slogan}}"</li>
+      <li
+        *ngIf="contact[this.id].slogan">"{{contact[this.id].slogan}}"</li>
       <hr>
-      <li *ngIf="contact[this.id].mobile" (click)="makeCall()"><img class="icons" src="../../assets/icons/mobile.svg" alt="mobile phone icon"><span>{{contact[this.id].mobile}}</span></li> <!-- IDEA: click to send message -->
-      <li *ngIf="contact[this.id].bizPhone" (click)="makeBizCall()"><img class="icons" src="../../assets/icons/phone.svg" alt="phone icon"><span>{{contact[this.id].bizPhone}}</span></li> <!-- IDEA: click to send message -->
+      <li
+        *ngIf="contact[this.id].mobile"
+        (click)="makeCall()"><img class="icons" src="../../assets/icons/mobile.svg" alt="mobile phone icon"><span>{{contact[this.id].mobile}}</span></li> <!-- IDEA: click to send message -->
+      <li
+        *ngIf="contact[this.id].bizPhone"
+        (click)="makeBizCall()"><img class="icons" src="../../assets/icons/phone.svg" alt="phone icon"><span>{{contact[this.id].bizPhone}}</span></li> <!-- IDEA: click to send message -->
       <hr>
-      <li *ngIf="contact[this.id].email" (click)="sendEmail()"><img class="icons" src="../../assets/icons/email-chic.svg" alt="email icon"> <span>{{contact[this.id].email}}</span></li> <!-- IDEA: click to send email -->
-      <li *ngIf="contact[this.id].bizEmail" (click)="sendBizEmail()"><img class="icons" src="../../assets/icons/mail.svg" alt="social icons"> <span>{{contact[this.id].bizEmail}}</span> </li> <!-- IDEA: click to go to app -->
+      <li
+        *ngIf="contact[this.id].email"
+        (click)="sendEmail()"><img class="icons" src="../../assets/icons/email-chic.svg" alt="email icon"> <span>{{contact[this.id].email}}</span></li> <!-- IDEA: click to send email -->
+      <li
+        *ngIf="contact[this.id].bizEmail"
+        (click)="sendBizEmail()"><img class="icons" src="../../assets/icons/mail.svg" alt="social icons"> <span>{{contact[this.id].bizEmail}}</span> </li> <!-- IDEA: click to go to app -->
       <hr>
-      <li *ngIf="contact[this.id].website" (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{contact[this.id].website}}</span></li><!-- IDEA: click to go to app -->
-      <li *ngIf="contact[this.id].addr" (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{contact[this.id].addr}}</span></li><!-- IDEA: click to go to app -->
-      <li *ngIf="contact[this.id].bizAddr" (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{contact[this.id].bizAddr}}</span></li><!-- IDEA: click to go to app -->
+      <li
+        *ngIf="contact[this.id].website"
+        (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{contact[this.id].website}}</span></li><!-- IDEA: click to go to app -->
+      <li
+        *ngIf="contact[this.id].addr"
+        ><img class="icons" src="../../assets/icons/placeholder.svg" alt="social icons"> <span>{{contact[this.id].addr}}</span></li><!-- IDEA: click to go to app -->
+      <li
+        *ngIf="contact[this.id].bizAddr"
+        (click)="getMap()"><img class="icons" src="../../assets/icons/location.svg" alt="social icons"> <span>{{contact[this.id].bizAddr}}</span></li><!-- IDEA: click to go to app -->
     </ul>
   </div>
 
@@ -29,9 +44,21 @@
 
   <div >
     <ul class="social-list">
-      <li><img class="icons" src="../../assets/icons/insta-color.svg" alt="social icons"> </li> <!-- IDEA: click to go to app -->
-      <li><img class="icons" src="../../assets/icons/facebook-color.svg" alt="social icons">  </li> <!-- IDEA: click to go to app -->
-      <li><img class="icons" src="../../assets/icons/linkedin-color.svg" alt="social icons">  </li> <!-- IDEA: click to go to app -->
+      <li
+        *ngIf="contact[this.id].instaLink"
+        (click)="webPage()"
+
+        ><img class="icons" src="../../assets/icons/insta-color.svg" alt="social icons"> </li> <!-- IDEA: click to go to app -->
+      <li
+        *ngIf="contact[this.id].fbLink"
+        (click)="webPage()"
+
+        ><img class="icons" src="../../assets/icons/facebook-color.svg" alt="social icons">  </li> <!-- IDEA: click to go to app -->
+      <li
+        *ngIf="contact[this.id].linkedIn"
+        (click)="webPage()"
+
+        ><img class="icons" src="../../assets/icons/linkedin-color.svg" alt="social icons">  </li> <!-- IDEA: click to go to app -->
     </ul>
   </div>
 

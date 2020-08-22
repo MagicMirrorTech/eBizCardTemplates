@@ -1,0 +1,17 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Keck;James;;;
+FN:James Keck
+ORG:Best Deal In Town;
+TITLE:Owner
+TEL;TYPE=mobile,voice;VALUE=tel:336-880-0967
+TEL;TYPE=work,voice;VALUE=tel:303-593-0581
+X-SOCIALPROFILE;type=LINKEDIN:www.linkedin.com/in/keck-james-keck
+X-SOCIALPROFILE;type=FACEBOOK:https://facebook.com/DenverHDTV
+X-SOCIALPROFILE;type=TWITTER:https://twitter.com/_techtranslator
+URL:https://www.bestdealdenver.com
+EMAIL:best.deal.in.denver@gmail.com
+REV:20200821T232000z
+TZ:-0600
+END:VCARD
