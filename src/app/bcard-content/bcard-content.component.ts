@@ -49,7 +49,7 @@ export class BcardContentComponent implements OnInit {
           this.id = 3;
       } else if (this.end == 'james') {
           this.id = 4;
-      }else if (this.end == 'cam') {
+      } else if (this.end == 'cam' || this.end == 'cameron' ) {
           this.id = 5;
       } else if (this.end == 'jk') {
           this.id = 6;
@@ -137,6 +137,13 @@ export class BcardContentComponent implements OnInit {
         }
       }
 
+      // Displays title if any social links exist
+      calendly(){
+        if (this.contact[this.id].calendly) {
+          open(this.contact[this.id].calendly);
+        }
+      }
+
   // END SHARING & SOCIAL
 
 
@@ -167,11 +174,6 @@ export class BcardContentComponent implements OnInit {
       makeBizCall() : void {
         let type = 'tel';
         location.href = (`${type}:${this.object[this.id].mobile}`);
-      }
-
-      // Scheduling A meeting
-      calendly(): void {
-        window.open('https://calendly.com/james-keck/connect');
       }
 
       // Download Contact Info

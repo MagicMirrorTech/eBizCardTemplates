@@ -52,7 +52,7 @@ export class BcardHeaderComponent implements OnInit {
             this.id = 3;
         } else if (this.end == 'james') {
             this.id = 4;
-        }else if (this.end == 'cam') {
+        }else if (this.end == 'cam' || this.end == 'cameron') {
             this.id = 5;
         } else if (this.end == 'jk') {
             this.id = 6;
