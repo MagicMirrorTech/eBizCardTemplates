@@ -88,6 +88,10 @@ CONTENT section
    margin: auto 0;
    text-align: left;
  }
+
+ .emails {
+   font-size: .9em;
+ }
  /*
  END TOP icons
  */

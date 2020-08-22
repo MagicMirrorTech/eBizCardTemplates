@@ -26,10 +26,10 @@
       <hr>
       <li
         *ngIf="contact[this.id].email"
-        (click)="sendEmail()"><img class="icons" src="../../assets/icons/email-chic.svg" alt="email icon"> <span>{{contact[this.id].email}}</span></li> <!-- IDEA: click to send email -->
+        (click)="sendEmail()"><img class="icons" src="../../assets/icons/email-chic.svg" alt="email icon"> <span class="emails">{{contact[this.id].email}}</span></li> <!-- IDEA: click to send email -->
       <li
         *ngIf="contact[this.id].bizEmail"
-        (click)="sendBizEmail()"><img class="icons" src="../../assets/icons/mail.svg" alt="social icons"> <span>{{contact[this.id].bizEmail}}</span> </li> <!-- IDEA: click to go to app -->
+        (click)="sendBizEmail()"><img class="icons" src="../../assets/icons/mail.svg" alt="social icons"> <span class="emails">{{contact[this.id].bizEmail}}</span> </li> <!-- IDEA: click to go to app -->
       <hr>
       <li
         *ngIf="contact[this.id].website"

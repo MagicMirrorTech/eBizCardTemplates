@@ -22,6 +22,8 @@ export const CONTACT: Contact[] = [
     linkedIn:         'linkProf',
     twitterLink:      '',
     fbLink:           'fbRyan',
+    gitHub:           '',
+    stkOvrflow:       '',
     mainColor:        '',
     secColor:         '',
     accColor:         ''
@@ -47,6 +49,8 @@ export const CONTACT: Contact[] = [
     linkedIn:         'linkProf',
     twitterLink:      '',
     fbLink:           'fbWife',
+    gitHub:           '',
+    stkOvrflow:       '',
     mainColor:        '',
     secColor:         '',
     accColor:         ''
@@ -72,6 +76,8 @@ export const CONTACT: Contact[] = [
     linkedIn:         '',
     twitterLink:      '',
     fbLink:           '',
+    gitHub:           '',
+    stkOvrflow:       '',
     mainColor:        'white',
     secColor:         'red',
     accColor:         'black'
@@ -97,6 +103,8 @@ export const CONTACT: Contact[] = [
     linkedIn:         '',
     twitterLink:      '',
     fbLink:           '',
+    gitHub:           '',
+    stkOvrflow:       '',
     mainColor:        '',
     secColor:         '',
     accColor:         ''
@@ -150,6 +158,8 @@ export const CONTACT: Contact[] = [
     linkedIn:         '',
     twitterLink:      '',
     fbLink:           'https://facebook.com/DenverHDTV',
+    gitHub:           '',
+    stkOvrflow:       '',
     mainColor:        '',
     secColor:         '',
     accColor:         ''
@@ -176,12 +186,12 @@ export const CONTACT: Contact[] = [
     linkedIn:         'https://linkedin.com/in/keck-james-keck',
     twitterLink:      'https://twitter.com/_techtranslator',
     fbLink:           'https://facebook.com/DenverHDTV',
+    gitHub:           '',
+    stkOvrflow:       '',
     mainColor:        '',
     secColor:         '',
     accColor:         ''
   },
-
-
   {
     id :              7,
     name:             'Jerius Guzman',
@@ -203,6 +213,8 @@ export const CONTACT: Contact[] = [
     linkedIn:         '',
     twitterLink:      '',
     fbLink:           'https://facebook.com/DenverHDTV',
+    gitHub:           '',
+    stkOvrflow:       '',
     mainColor:        '',
     secColor:         '',
     accColor:         ''
