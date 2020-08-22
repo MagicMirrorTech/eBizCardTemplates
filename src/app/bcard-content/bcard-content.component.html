@@ -40,12 +40,14 @@
       <li
         *ngIf="contact[this.id].bizAddr"
         (click)="getMap()"><img class="icons" src="../../assets/icons/location.svg" alt="social icons"> <span>{{contact[this.id].bizAddr}}</span></li><!-- IDEA: click to go to app -->
+
     </ul>
   </div>
 
   <hr>
 
-  <div >
+  <div class="social-container" >
+    <h4>Social</h4>
     <ul class="social-list">
       <li
         *ngIf="contact[this.id].instaLink"
@@ -68,6 +70,9 @@
           *ngIf="contact[this.id].gitHub"
 
           ><a href="{{contact[this.id].gitHub}}"><img class="icons" src="../../assets/icons/github.svg" alt="social icons"> </a> </li> <!-- IDEA: click to go to app -->
+        <li
+          *ngIf="contact[this.id].stkOvrflow"
+          (click)="getMap()"><img class="icons" src="../../assets/icons/stack-overflow.svg" alt="social icons"></li><!-- IDEA: click to go to app -->
 
 
     </ul>

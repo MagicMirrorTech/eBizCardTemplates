@@ -25,6 +25,8 @@ CONTENT section
    width: 100%;
  }
 
+ .social-container {}
+
  /*
  START
  Share buttons right-hand side
@@ -102,6 +104,9 @@ CONTENT section
 Start:
 BOTTOM icons
 */
+.social-container > h4 {
+  margin-left: 30%;
+}
 
 .social-list {
   padding: 1%;
@@ -109,12 +114,14 @@ BOTTOM icons
   grid-template-columns: auto auto auto auto;
   text-align: center;
   vertical-align: middle;
-
 }
+
+
 .social-list li {
    list-style-type: none;
    padding: 5%;
    width: 100%;
+   margin-bottom: 5%;
  }
 
  .social-list li img {
@@ -159,5 +166,5 @@ END Contact Btn
   .spacer {
     height: 130px;
     text-align: center;
-
+    align-content: flex-start;
   }
