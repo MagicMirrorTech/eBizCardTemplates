@@ -18,6 +18,19 @@ HEADER   section
   width: 45%;
   border-radius: 50%;
 }
+.qr {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  z-index: 100;
+  /* background-color: white; */
+  border-radius: 10px;
+}
+
+.silent {
+  display: none;
+}
 
 .header-info {
   margin: 5% 0;
