@@ -255,7 +255,7 @@ export const CONTACT: Contact[] = [
     gglMap:           '',
     instaLink:        '',
     linkedIn:         'https://linkedin.com/in/jorgemtzcrz',
-    twitterLink:      'https://twitter.com/',
+    twitterLink:      '',
     fbLink:           'https://facebook.com/mmdevs',
     gitHub:           'https://github.com/JorgeMtzCrz',
     stkOvrflow:       '',
