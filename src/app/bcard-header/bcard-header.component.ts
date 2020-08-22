@@ -104,17 +104,4 @@ export class BcardHeaderComponent implements OnInit {
     }
   }
 
-
-
-
-
-
-// END contact info
-
-
-
-
-
-
-
 }

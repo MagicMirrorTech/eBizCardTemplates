@@ -86,7 +86,7 @@ export class BcardContentComponent implements OnInit {
 
 
   // BUSINESS INFO
-  
+
       // Going to website
       webPage() : void {
         window.open(`http://${this.object[this.id].website}`);
@@ -112,6 +112,7 @@ export class BcardContentComponent implements OnInit {
         }
         navigator.share(cardLink);
       }
+
 
   // END SHARING & SOCIAL
 
@@ -167,5 +168,8 @@ export class BcardContentComponent implements OnInit {
         let adLink = this.object[this.id].gglLink;
         window.open(adLink);
       }
+
+
+  // END contact info
 
 }
