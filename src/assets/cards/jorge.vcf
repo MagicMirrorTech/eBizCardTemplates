@@ -1,0 +1,16 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Martinez;Jorge;;;
+FN:Jorge Martinez
+ORG:M|M Developers;
+TITLE:Full-Stack Developer
+TEL;TYPE=mobile,voice;VALUE=tel:+52-77-1132-7747
+X-SOCIALPROFILE;type=LINKEDIN:www.linkedin.com/in/jorgemtzcrz
+X-SOCIALPROFILE;type=FACEBOOK:https://facebook.com/mmdevs
+X-SOCIALPROFILE;type=GITHUB:https://github.com/JorgeMtzCrz
+URL:https://www.magicmirror.dev
+EMAIL:jorge@magicmirror.dev
+REV:20200822T123000z
+TZ:-0600
+END:VCARD
