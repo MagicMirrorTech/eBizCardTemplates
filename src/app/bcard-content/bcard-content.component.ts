@@ -100,7 +100,9 @@ export class BcardContentComponent implements OnInit {
       }
 
       getRevs(): void {
-        open(this.object[this.id].gglLink);
+        if (this.object[this.id].gglLink) {
+          open(this.object[this.id].gglLink);
+        }
       }
 
     // dynamically set color of "Add to contact" btn
