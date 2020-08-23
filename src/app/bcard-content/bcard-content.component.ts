@@ -42,7 +42,7 @@ export class BcardContentComponent implements OnInit {
     useUrl() {
       if( this.end == 'ryan') {
         this.id = 0;
-      } else if (this.end == 'wife') {
+      } else if (this.end == 'tiff' || this.end == 'tiffany') {
         this.id = 1;
       } else if (this.end == 'lisa') {
         this.id = 2;
