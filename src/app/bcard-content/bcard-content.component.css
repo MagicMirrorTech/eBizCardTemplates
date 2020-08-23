@@ -121,6 +121,10 @@ CONTENT section
     font-weight: bold;
   }
 
+  .centerText {
+    text-align: center;
+  }
+
   .contact-list > a {
     text-decoration: none;
     color: black;
