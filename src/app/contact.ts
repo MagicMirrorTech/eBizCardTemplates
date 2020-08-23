@@ -8,6 +8,7 @@ export interface Contact {
   bizPhone:     string;
   email:        string;
   bizEmail:     string;
+  siteName:     string;
   website:      string;
   addr:         string;
   bizAddr:      string;

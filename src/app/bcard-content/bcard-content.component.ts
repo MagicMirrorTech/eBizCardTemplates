@@ -19,6 +19,7 @@ export class BcardContentComponent implements OnInit {
   tname:string;
   social:boolean;
   id:number;
+  website:string;
 
     // Gets the current url to find the correct link to redirect
     getUrl(): void {
@@ -88,11 +89,25 @@ export class BcardContentComponent implements OnInit {
     this.getColors();
     // Determins if any social links are present to know if should display title or not
     this.getSocialTitle();
+
+    this.dispWebSite();
   }
 
 
   // BUSINESS INFO
-
+      // WEBSITE
+          // webPage display
+              dispWebSite() {
+                let l = this.object[this.id].website.length;
+                console.log('the length is: ' + l);
+                if (l > 22){
+                  if (this.object[this.id].siteName) {
+                    this.website = this.object[this.id].siteName;
+                  } else {
+                    this.website = "Website";
+                  }
+                }
+              }
       // Going to website
       webPage() : void {
         window.open(`http://${this.object[this.id].website}`);

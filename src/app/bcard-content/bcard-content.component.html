@@ -46,7 +46,7 @@
       <hr>
       <li
         *ngIf="contact[this.id].website"
-        (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{contact[this.id].website}}</span></li><!-- IDEA: click to go to app -->
+        (click)="webPage()"><img class="icons" src="../../assets/icons/globe.svg" alt="social icons"> <span>{{this.website}}</span></li><!-- IDEA: click to go to app -->
       <li
         *ngIf="contact[this.id].addr"
         ><img class="icons" src="../../assets/icons/placeholder.svg" alt="social icons"> <span>{{contact[this.id].addr}}</span></li><!-- IDEA: click to go to app -->
