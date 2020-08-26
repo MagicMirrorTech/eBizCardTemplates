@@ -91,14 +91,8 @@ export class BcardHeaderComponent implements OnInit {
     this.getUrl();
     this.useUrl();
 
-    // dynamically set color of "Add to contact" btn
-    if (this.contact[this.id].secColor) {
-      // get color from DB
-      let color = this.object[this.id].secColor;
-
-      // Set color and save as variable
-      let btnColor = document.getElementById('contactBtn').style.backgroundColor=color;
-    }
+    // Get main colors
+    this.getColor();
   }
 
   // QR CODE
@@ -116,5 +110,23 @@ export class BcardHeaderComponent implements OnInit {
       qr.remove('silent');
     }
   }
+
+  // Get main color
+  getColor(){
+    if (this.contact[this.id].mainColor) {
+      let mColor = this.object[this.id].mainColor;
+      // Set backgroundColor and save as variable
+      let bckgrndClr = document.getElementById('header-container').style.backgroundColor=mColor;
+    }
+    if (this.contact[this.id].accColor) {
+      let aColor = this.object[this.id].accColor;
+      // Set backgroundColor and save as variable
+      let fontClr = document.getElementById('header-info').style.color=aColor;
+    }
+  }
+
+
+
+
 
 }
