@@ -98,8 +98,8 @@ export class BcardHeaderComponent implements OnInit {
   // QR CODE
   togQR() : void {
     let port = document.getElementById('portrait').classList;
-    let qr = document.getElementById('test').classList;
-    // let qr = document.getElementById('qr').classList;
+    // let qr = document.getElementById('test').classList;
+    let qr = document.getElementById('qr').classList;
 
 
     if (port.contains('silent')) {
