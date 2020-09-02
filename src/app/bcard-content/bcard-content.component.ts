@@ -104,8 +104,10 @@ export class BcardContentComponent implements OnInit {
                   if (this.object[this.id].siteName) {
                     this.website = this.object[this.id].siteName;
                   } else {
-                    this.website = "Website";
+                    this.website = "Checkout Website";
                   }
+                } else {
+                  this.website = this.object[this.id].website;
                 }
               }
       // Going to website
