@@ -203,7 +203,7 @@ export class BcardContentComponent implements OnInit {
       // Call Business Phone
       makeBizCall() : void {
         let type = 'tel';
-        location.href = (`${type}:${this.object[this.id].mobile}`);
+        location.href = (`${type}:${this.object[this.id].bizPhone}`);
       }
 
       // Download Contact Info
