@@ -3,8 +3,9 @@ import { Contact } from "./contact";
 export const CONTACT: Contact[] = [
   {
     id :              0,
+    org:              true,
     name:             'Ryan & Tiffany',
-    title:            'Success Consultant',
+    title:            'Success Consultants',
     biz:              'AmWay',
     slogan:           'You Are Who You Associate With',
     mobile:           '(720) 260-0407',
@@ -31,6 +32,7 @@ export const CONTACT: Contact[] = [
   },
   {
     id :              1,
+    org:              true,
     name:             'Ryan & Tiffany',
     title:            'Success Coach',
     biz:              'AmWay',
@@ -59,6 +61,7 @@ export const CONTACT: Contact[] = [
   },
   {
     id :              2,
+    org:              false,
     name:             'Lisa Keck',
     title:            'Owner',
     biz:              'Plain & Fancy Caterers',
@@ -87,6 +90,7 @@ export const CONTACT: Contact[] = [
   },
   {
     id :              3,
+    org:              false,
     name:             'Carla Pomicter',
     title:            'IT Compliance Analyst',
     biz:              'DHI Mortgage Company, Ltd.',
@@ -99,15 +103,15 @@ export const CONTACT: Contact[] = [
     website:          'dhimortgage.com',
     addr:             '',
     bizAddr:          '',
-    calLink:          '',
+    calLink:          'https://calendly.com/james-keck/connect',
     gglLink:          '',
-    gglRev:           '',
+    gglRev:           'https://g.page/mmdevs/review?rc',
     gglMap:           '',
     instaLink:        '',
     linkedIn:         '',
-    twitterLink:      '',
+    twitterLink:      'https://twitter.com/_techtranslator',
     fbLink:           '',
-    gitHub:           '',
+    gitHub:           'https://github.com/MagicMirrorTech',
     stkOvrflow:       '',
     mainColor:        '',
     secColor:         '',
@@ -115,6 +119,7 @@ export const CONTACT: Contact[] = [
   },
   {
     id :              4,
+    org:              false,
     name:             'James Keck',
     title:            'Software Developer | CEO | Creator of Ideas',
     biz:              'M|M Developers',
@@ -144,6 +149,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              5,
+    org:              false,
     name:             'Cameron Montes',
     title:            'Operations Specialist',
     biz:              'Best Deal In Town',
@@ -173,6 +179,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              6,
+    org:              false,
     name:             'James Keck',
     title:            'Owner',
     biz:              'Best Deal In Town',
@@ -201,6 +208,7 @@ export const CONTACT: Contact[] = [
   },
   {
     id :              7,
+    org:              false,
     name:             'Jerius Guzman',
     title:            'Marketing Specialist',
     biz:              'Best Deal In Town',
@@ -230,6 +238,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              8,
+    org:              false,
     name:             'Andie Fernandez',
     title:            'Community Manager',
     biz:              'M|M Developers',
@@ -259,6 +268,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              9,
+    org:              false,
     name:             'Jorge Martinez',
     title:            'Full-Stack Developer',
     biz:              'M|M Developers',
@@ -289,6 +299,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              10,
+    org:              false,
     name:             'Gabriela ',
     title:            'Designer, UX/UI',
     biz:              'M|M Developers',
@@ -319,6 +330,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              11,
+    org:              false,
     name:             'Jose Palillero',
     title:            'Full-Stack Developer',
     biz:              'M|M Developers',
@@ -348,6 +360,7 @@ export const CONTACT: Contact[] = [
 
   {
     id :              12,
+    org:              false,
     name:             'Erik Reyes',
     title:            'Plugger of Men',
     biz:              'Company Name',

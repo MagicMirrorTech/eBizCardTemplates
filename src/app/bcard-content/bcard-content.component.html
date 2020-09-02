@@ -32,10 +32,10 @@
       <hr>
       <li
         *ngIf="contact[this.id].mobile"
-        (click)="makeCall()"><img class="icons" src="../../assets/icons/mobile.svg" alt="mobile phone icon"><span>{{contact[this.id].mobile}}</span></li> <!-- IDEA: click to send message -->
+        (click)="makeCall()"><img class="icons" src="../../assets/icons/mobile.svg" alt="mobile phone icon"><span *ngIf="contact[this.id].org">Ryan : </span><span>{{contact[this.id].mobile}}</span></li> <!-- IDEA: click to send message -->
       <li
         *ngIf="contact[this.id].bizPhone"
-        (click)="makeBizCall()"><img class="icons" src="../../assets/icons/phone.svg" alt="phone icon"><span>{{contact[this.id].bizPhone}}</span></li> <!-- IDEA: click to send message -->
+        (click)="makeBizCall()"><img class="icons" src="../../assets/icons/phone.svg" alt="phone icon"><span *ngIf="contact[this.id].org">Tiffany : </span><span>{{contact[this.id].bizPhone}}</span></li> <!-- IDEA: click to send message -->
       <hr>
       <li
         *ngIf="contact[this.id].email"
