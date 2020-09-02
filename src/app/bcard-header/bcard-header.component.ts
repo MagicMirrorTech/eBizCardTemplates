@@ -42,10 +42,10 @@ export class BcardHeaderComponent implements OnInit {
       }
 
       useUrl() {
-        if( this.end == 'ryan') {
+        if( this.end == 'ryan' || this.end == 'tr') {
           this.id = 0;
-        } else if (this.end == 'tiff' || this.end == 'tiffany') {
-          this.id = 1;
+        } else if (this.end == 'tiff' || this.end == 'tiffany' || this.end == 'tr') {
+          this.id = 0;
         } else if (this.end == 'lisa') {
           this.id = 2;
         } else if (this.end == 'carla') {
