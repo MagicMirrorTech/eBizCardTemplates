@@ -123,7 +123,7 @@ export const CONTACT: Contact[] = [
     name:             'James Keck',
     title:            'Software Developer | CEO | Creator of Ideas',
     biz:              'M|M Developers',
-    slogan:           '2-Day Hand-coded Websites',
+    slogan:           'Reflecting Honestly',
     mobile:           '(336) 880-0967',
     bizPhone:         '',
     email:            'jakkeck@gmail.com',
