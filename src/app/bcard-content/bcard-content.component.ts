@@ -66,6 +66,12 @@ export class BcardContentComponent implements OnInit {
           this.id = 11;
       } else if (this.end == 'erik' || this.end == 'eric') {
           this.id = 12;
+      } else if (this.end == 'jeff' || this.end == 'geoff') {
+          this.id = 6;
+      } else if (this.end == 'nick' || this.end == 'nicholas') {
+          this.id = 2;
+      } else if (this.end == 'abhishek' || this.end == 'abishek') {
+          this.id = 11;
       }
 
       else {

@@ -1,0 +1,14 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Hart;Nick;;;
+FN:Nick Hart
+ORG:Owen MBA;
+TITLE:MBA Candidate 2024
+TEL;TYPE=mobile,voice;VALUE=tel:203-391-8582
+X-SOCIALPROFILE;type=LINKEDIN:www.linkedin.com/in/ndqhart
+URL:https://bcard.netlify.app/nick
+EMAIL:nicholas.d.hart@vanderbilt.edu
+REV:20220920T200400z
+TZ:-0600
+END:VCARD

@@ -1,0 +1,14 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Lath;Abhishek;;;
+FN:Abhishek Lath
+ORG:Owen MBA;
+TITLE:MBA Candidate 2024
+TEL;TYPE=mobile,voice;VALUE=tel:646-991-7572
+X-SOCIALPROFILE;type=LINKEDIN:www.linkedin.com/in/abhishek-lath
+URL:https://bcard.netlify.app/abhishek
+EMAIL:abhishek.lath@vanderbilt.edu
+REV:20220920T200400z
+TZ:-0600
+END:VCARD

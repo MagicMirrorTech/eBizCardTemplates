@@ -1,0 +1,14 @@
+
+BEGIN:VCARD
+VERSION:3.0
+N:Tanner;Geoff;;;
+FN:Geoff Tanner
+ORG:Owen MBA;
+TITLE:MBA Candidate 2024
+TEL;TYPE=mobile,voice;VALUE=tel:224-217-1802
+X-SOCIALPROFILE;type=LINKEDIN:www.linkedin.com/in/geoffrey-tanner-mba2024
+URL:https://bcard.netlify.app/geoff
+EMAIL:geoffrey.t.tanner@vanderbilt.edu
+REV:20220920T200400z
+TZ:-0600
+END:VCARD
